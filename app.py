@@ -2,6 +2,7 @@ from dash import Dash, html, dcc, Input, Output, callback
 from figure import fig1, fig3, fig5, inst, get_inst
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='''Data Visualization Project''', style={'text-align': 'center', 'margin-bottom': '2rem'}),
